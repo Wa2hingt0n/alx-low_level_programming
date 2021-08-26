@@ -1,16 +1,16 @@
-/** 
- * puts - write a line to the output
- *
- * Description: Its used to write a line or string to the output filestream.
- * It also appends a newline character to output.
- * Return: Always zero (success)
-*/
-
 #include <stdio.h>
+
+/**
+ * main - Program start
+ *
+ * Description: Signifies the begining and end of execution of a program.
+ * Code to be executed is enclosed in curly brackets.
+ * Return: Always zero (success)
+ */
 
 int main(void)
 {
-	char my_string[] = "Programming is like building a multilingual puzzle";
+	char my_string[] = "\"Programming is like building a multilingual puzzle";
 
 	puts (my_string);
 	return (0);
