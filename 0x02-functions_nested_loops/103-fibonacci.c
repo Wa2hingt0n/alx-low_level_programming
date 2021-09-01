@@ -10,13 +10,14 @@ int main(void)
 {
 	long int i, j, sum, total;
 
-	i = 1;
-	j = 2;
-	sum = i + j;
+	i = 0;
+	j = 1;
 	total = 0;
+	sum = 0;
 
 	while (sum < 4000000)
 	{
+		sum = i + j;
 		i = j;
 		sum += j;
 		j = sum - i;
