@@ -15,11 +15,11 @@ int main(void)
 	j = 2;
 	sum = i + j;
 
-	printf("1, 2, ");
+	printf("1, 2");
 
 	for (n = 1; n <= 48; n++)
 	{
-		printf("%li, ", sum);
+		printf(", %li", sum);
 
 		i = j;
 		sum += j;
