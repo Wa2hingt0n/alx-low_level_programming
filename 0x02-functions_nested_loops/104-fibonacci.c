@@ -17,7 +17,7 @@ int main(void)
 
 	printf("1, 2");
 
-	for (n = 1; n <= 96; n++)
+	for (n = 1; n <= 98; n++)
 	{
 		printf(", %lu", sum);
 
