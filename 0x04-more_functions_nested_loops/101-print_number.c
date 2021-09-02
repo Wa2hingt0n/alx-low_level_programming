@@ -46,7 +46,7 @@ void print_number(int n)
 		digit = ((n / divisor) % 10);
 		if (digit == 0 && begin == 0)
 		{
-			place--:
+			place--;
 		}
 		else if (digit != 0 && begin == 0)
 		{
