@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - Modifies the array a
- *
- * Return: Always 0
- */
-
 int main(void)
 {
 	int n;
