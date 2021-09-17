@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 {
 	int mul;
 
-	if ((argc - 1 < 1) || argc > 3)
+	if ((argc <= 2) || (argc > 3))
 	{
 		printf("Error\n");
 		return (1);
