@@ -2,48 +2,66 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - Concatenates two strings
- * @s1: First string
- * @s2: Second string
- * @n:  Number of bytes of second string to concatenate
- *
- * Return: Allocated space in memory containing s1 and s2 concatenated
+ * _strlen - gets string length
+ * @string: string
+ * Return: length (int)
+ */
+
+int _strlen(char *string)
+{
+	int length;
+
+	length = 0;
+	while (string[length] != '\0')
+	{
+		length++;
+	}
+	return (length);
+}
+
+/**
+ * string_nconcat - concatenates two strings
+ * @s1: string 1
+ * @s2: string 2
+ * @n: integer that determines whether entire s2 string will be used
+ * Return: pointer to allocated memory corresponding with the string
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *s;
-	unsigned int i, len1, len2, len;
+	unsigned int length1, length2, lengthc, i, j;
+	char *str;
 
-	len1 = 0;
-	len2 = 0;
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	for (i = 0; s1[i]; i++)
-		len1++;
-	for (i = 0; s2[i]; i++)
-		len2++;
-	if (n >= len2)
-		len = len1 + len2;
-	else
-		len = len1 + n;
-	s = malloc(sizeof(char) * (len + 1));
-	if (s == NULL)
-		return (NULL);
-	len = 0;
-	for (i = 0; s1[i]; i++)
-	{
-		s[len] = s1[i];
-		len++;
-	}
-	for (i = 0; s2[i] && i < n; i++)
-	{
-		s[len] = s2[i];
-		len++;
-	}
+	length1 = _strlen(s1);
+	length2 = _strlen(s2);
 
-	s[len] = '\0';
-	return (s);
+	if (n >= length2)
+		lengthc = length1 + length2 + 1;
+	else
+	{
+		lengthc = length1 + n + 1;
+		length2 = n;
+	}
+	str = malloc(lengthc);
+	if (str == NULL)
+		return (NULL);
+
+	i = 0;
+	while (i < length1)
+	{
+		str[i] = s1[i];
+		i++;
+	}
+	j = 0;
+	while (j < length2)
+	{
+		str[i + j] = s2[j];
+		j++;
+	}
+	str[i + j] = '\0';
+	return (str);
 }
