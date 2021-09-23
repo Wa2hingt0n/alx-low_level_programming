@@ -28,10 +28,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len = 0;
 	for (i = 0; s1[i]; i++)
 	{
-		s[len++] = s1[i];
+		s[len] = s1[i];
+		len++;
 	}
 	for (i = 0; s2[i] && i < n; i++)
-		s[len++] = s2[i];
+	{
+		s[len] = s2[i];
+		len++;
+	}
 
 	s[len] = '\0';
 	return (s);
