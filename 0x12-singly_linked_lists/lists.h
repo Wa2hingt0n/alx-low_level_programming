@@ -7,8 +7,8 @@
 /**
  * struct list_s - singli linked list
  * @str: (malloc'ed string)
- * len: Length of the string
- * next: Point to the next node
+ * @len: Length of the string
+ * @next: Point to the next node
  *
  * Description: singly linked list node structure
  */
