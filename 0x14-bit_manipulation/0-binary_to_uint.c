@@ -36,7 +36,7 @@ int power(int base, int exponent)
 }
 
 /**
- * binary_to_unit - Converts a binary number to an unsigned integer
+ * binary_to_uint - Converts a binary number to an unsigned integer
  * @b: String of 0 and 1 chars to be converted to an unsigned integer
  *
  * Return: The converted number OR
