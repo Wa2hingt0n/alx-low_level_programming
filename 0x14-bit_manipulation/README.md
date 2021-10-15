@@ -6,11 +6,15 @@ This project involves creation of various C-functions and C-programs that make u
 
 ## Files
 
+### main.h
+
+ Project header file that contains all function prototypes for functions described below.
+
 ### 0-binary_to_uint.c
 
  This is a function that converts a binary number to an `unsigned int`.
 
- Prototype: unsigned int binary_to_uint(const char *b);
+ Prototype: `unsigned int binary_to_uint(const char *b);`
  - `b` points to a string of `0` and `1` chars
  - The function returns:
    - The converted number or 0 if
