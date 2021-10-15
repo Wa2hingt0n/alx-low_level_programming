@@ -9,6 +9,7 @@ This project involves creation of various C-functions and C-programs that make u
 ### 0-binary_to_uint.c
 
  This is a function that converts a binary number to an `unsigned int`.
+
  Prototype: unsigned int binary_to_uint(const char *b);
  - `b` points to a string of `0` and `1` chars
  - The function returns:
@@ -19,6 +20,7 @@ This project involves creation of various C-functions and C-programs that make u
 ### 1-print_binary.c
 
  This function prints the binary representation of a number.
+
  Prototype: `void print_binary(unsigned long int n);`
  The following were were not allowed to be used in the function:
  - arrays
