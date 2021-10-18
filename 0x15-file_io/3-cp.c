@@ -1,5 +1,8 @@
 #include "main.h"
+#include <fcntl.h>
+#include <unistd.h>
 #include <stdarg.h>
+#include <stdio.h>
 
 /**
  * error_handler - handles errors for cp
