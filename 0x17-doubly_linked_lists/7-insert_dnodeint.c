@@ -4,7 +4,7 @@
  * insert_dnodeint_at_index - inserts a new node at a given position
  * @h: Begginning of the doubly linked list
  * @idx: Index of the list where the new node should be added
- * n: Data to be added to the new node
+ * @n: Data to be added to the new node
  *
  * Return: Address of the new node if successful
  *         NULL of it failed to add a new node
