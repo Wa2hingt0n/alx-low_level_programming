@@ -17,10 +17,15 @@ def island_perimeter(grid):
                      island or nothing.
     """
     counter = 0
-    for i in grid:
-        for j in i:
-            if i[j] == 1:
+    proximity_loss = 0
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
+            if grid[i][j] == 1:
                 counter += 1
-    perimeter = (counter * 2) + 2
+                if (j > 0 and grid[i][j - 1] == 1):
+                    proximity_loss += 1
+                if (i > 0 and grid[i - 1][j]) == 1:
+                    proximity_loss += 1
+    perimeter = (counter * 4) - (proximity_loss * 2)
 
     return perimeter
