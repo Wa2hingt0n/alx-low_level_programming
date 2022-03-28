@@ -18,14 +18,14 @@ This project introduces various search algorithms, such as the linear search and
 ### 5-0: The `space complexity` (worst case) of a binary search in an array of size `n`.
 
 ### 6-0: The space complexity of the following function:
- > int **allocate_map(int n, int m)
- > {
- >	int **map;
- >
- >    	map = malloc(sizeof(int *) * n);
- >   	for (size_t i = 0; i < n; i++)
- >   	{
- >		  map[i] = malloc(sizeof(int) * m);
- >       }
- >   	return (map);
- > }
+ >  int **allocate_map(int n, int m)
+ >  {
+ >>	int **map;
+ >>
+ >>    	map = malloc(sizeof(int *) * n);
+ >>   	for (size_t i = 0; i < n; i++)
+ >>   	{
+ >>>		  map[i] = malloc(sizeof(int) * m);
+ >>     }
+ >>   	return (map);
+ >  }
